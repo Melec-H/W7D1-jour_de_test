@@ -1,4 +1,12 @@
 
 
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>index</h1>
+
+<% if user_signed_in? %>
+    <a href="/page_club/show"> vers la page club</a>
+    
+    <% else %>
+
+    <p>Sign In ou Sign Up pour accéder au contenu de cette page</p>
+
+<% end %>
