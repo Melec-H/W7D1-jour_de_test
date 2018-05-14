@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'page_club/show'
   devise_for :users
   get 'home/index'
   
